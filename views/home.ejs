@@ -1,0 +1,48 @@
+<%- include(`./partials/header.ejs`) %>
+<!-- home page -->
+
+
+    <div class="homepage">
+        <div class="perpost">
+            <div class="titleandbutton">
+                <h1 class="posttitle">
+                    Welcome
+                </h1>
+            </div>
+            <div style="width: 30%; background-color: #ffd700; height: 2px;"></div>
+            <p class="paragraph">
+                This is my best website I have ever made. There are many frontend and backend features used here. You can create posts and upload them publicly, and you can also delete or edit uploaded posts. I hope you like it.
+            </p>
+        </div>
+
+        <% if (posts.length > 0) { %>
+            <% posts.forEach((post) => { %>
+                <div class="perpost">
+                    <div class="titleandbutton">
+                        <h1 class="posttitle">
+                            <%= post.title %>
+                        </h1>
+                        <div style="display: flex; justify-content: flex-end;">
+                            <form action="/delete" method="POST">
+                                <input type="hidden" name="postId" value="<%= post.id %>">
+                                <input type="submit" value="delete" class="button-on-post deletebtn">
+                            </form>  
+                            <form action="/edit/<%= post.id %>" method="GET">
+                                <button type="submit" class="button-on-post editbtn">Edit</button>
+                            </form>
+                        </div>
+                    </div>
+                    <div style="width: 30%; background-color: #ffd700; height: 2px;"></div>
+                    <p class="paragraph">
+                        <%= post.story %>
+                    </p>
+                </div>
+            <% }); %>
+        <% } else { %>
+            <p>No posts yet. Create one!</p>
+        <% } %>
+    </div>
+
+
+<!-- home page -->
+<%- include(`./partials/footer.ejs`)%>

@@ -1,0 +1,117 @@
+<!-- header.ejs -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./public/style/style.css">
+
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@t@97,300..700&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lilita+One&display=swap" rel="stylesheet">
+    <!-- fonts -->
+</head>
+<body>
+    
+    <nav class="navbar">
+        <ul class="nav-links">
+            <!-- <li><a href="#" class="active">Home</a></li> -->
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Create</a></li>
+            <li><a href="#">Who created</a></li>
+        </ul>
+    </nav>
+<!-- header.ejs -->
+
+<!-- home.ejs -->
+    <!-- <div class="homepage">
+
+        <div class="perpost">
+            <div class="titleandbutton">
+                <h1 class="posttitle">
+                    Post Title
+                </h1>
+                <div style="display: flex; justify-content: flex-end;">
+                    <input type="delete" value="delete" class="button-on-post deletebtn">
+                    <input type="edit" value="edit" class="button-on-post editbtn">
+                </div>
+            </div>
+            <div style="width: 30%; background-color: #ffd700; height: 2px;"></div>
+            <p class="paragraph">
+                The forest was alive with the sound of rustling leaves and distant birdsong as the sunlight filtered through the canopy, painting the ground with dappled patterns. A gentle breeze carried the earthy scent of moss and wildflowers, creating a serene atmosphere.
+            </p>
+        </div>
+
+    </div> -->
+<!-- home.ejs -->
+
+<!-- create.ejs -->
+     <!-- <div class="parrentdiv">
+        <div class="central-div">
+            <h1 class="create-heading">
+                Add your Story
+            </h1>
+            <button class="create-button">
+                Create Now
+            </button>
+        </div>
+    </div> -->
+<!-- create.ejs -->
+
+<!-- postcreate.ejs -->
+    <div class="parrentdiv postpd">
+       <form action="/submit" method="POST"></form> 
+    <div class="centralpostdiv">
+            <div class="postinput">
+                <input type="text" name="title" placeholder="Add a title">
+                <div style="width: 30%; background-color: #ffd700; height: 2px;"></div>
+                <input type="text" name="story" placeholder="Share some story">
+            </div>
+            <div class="postbutton">
+                <input type="discard" value="discard" class="post-button discard">
+                <input type="publish" value="publish" class="post-button publish">
+            </div>
+    </div>
+        </form>
+    </div>
+<!-- postcreate.ejs -->
+
+<!-- whocreate.ejs -->
+    <!-- <div class="homepage">
+        <div class="aboutme">
+            <div class="nika">            
+                <img src="./asset/image/nika.jpg" alt="nikoloz_ebralidze" class="nikoloz">
+                <h2 class="name" style="font-size: 2rem;">Nikoloz Ebralidze</h2>
+                <h3 class="name">Full stack Developer</h3>
+                <div style="width: 30%; background-color: #ffd700; height: 3px;"></div>
+            </div>
+            <p class="paragraph" style="font-size: 1 rem;">
+                I am Nikoloz Ebralidze, a web developer, studying mathematics at TSU. I am studying full stack web development on Udemy course with Angela Yu. I can code in html, css, javascript, node.js, express.js and also know several libraries. I have written a lot of code and several multifunctional websites. I am also a digital marketer, which I learned on the TBC course and I can manage social media networks, create content, advertise on Meta and Google platforms.
+            </p>
+            
+            <div class="contact">
+                <div style="width: 30%; background-color: #ffd700; height: 3px;"></div>
+                <div class="mysocmedia">
+                    <a href="https://www.facebook.com/profile.php?id=100008705560337"><img src="./asset/image/facebook.gif" alt="facebook" class="img"></a>
+                    <a href="https://github.com/NikaEbraLidze"><img src="./asset/image//github.png" alt="github" class="img"></a>
+                    <a href="https://www.linkedin.com/in/nika-ebralidze-812431329/"><img src="./asset/image/linkedin.png" alt="linkedin" class="img"></a>
+                    <a href="mailto:nikaebralidze21@gmail.com"><img src="./asset/image/mail.png" alt="gmail" class="img"></a>
+                </div>
+            </div>
+        </div>
+        
+    </div> -->
+<!-- whocreated.ejs -->
+
+
+<!-- footer.ejs -->
+    <script src="./index.js" charset="UTF-8"></script>
+</body>
+</html>
+<!-- footer.ejs -->

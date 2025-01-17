@@ -1,0 +1,39 @@
+<%- include(`./partials/header.ejs`)%>
+<!-- create2 -->
+
+<form action="/update" method="POST">
+    <div class="parrentdiv postpd">
+        <div class="centralpostdiv">
+        <!-- Title -->
+        <input 
+            type="text" 
+            name="title" 
+            placeholder="Add a title" 
+            value="<%= title %>"
+        />
+
+        <div style="width: 30%; background-color: #ffd700; height: 2px;"></div>
+    
+        <!-- Story -->
+        <input
+            type="text"
+            name="story" 
+            placeholder="Share your story"
+            value="<%= story %>"
+        />
+    
+        <!-- Hidden input to pass the post ID -->
+        <input type="hidden" name="id" value="<%= id %>">
+    
+        <!-- Buttons -->
+        <div style="display: flex; justify-content: flex-end;">
+            <button type="submit" name="action" value="publish" class="post-button publish">
+            Save Changes
+            </button>
+        </div>
+        </div>
+    </div>
+</form>
+
+<!-- create2 -->
+<%- include(`./partials/footer.ejs`)%>

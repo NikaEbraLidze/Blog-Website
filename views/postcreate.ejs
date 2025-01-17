@@ -1,0 +1,38 @@
+<%- include(`./partials/header.ejs`)%>
+<!-- create2 -->
+
+<form action="/submit" method="POST">
+    <div class="parrentdiv postpd">
+        <div class="centralpostdiv">
+            <div class="postinput">
+                <input 
+                    type="text" 
+                    name="title" 
+                    placeholder="Add a title" 
+                    value="<%= typeof title !== 'undefined' ? title : '' %>">
+
+                <div style="width: 30%; background-color: #ffd700; height: 2px;"></div>
+                
+                <input 
+                    type="text" 
+                    name="story" 
+                    placeholder="Share some story" 
+                    value="<%= typeof story !== 'undefined' ? story : '' %>">
+                
+                <input 
+                    type="hidden" 
+                    name="id" 
+                    value="<%= typeof id !== 'undefined' ? id : '' %>">
+            </div>
+            <div class="postbutton">
+                <a href="/discard"><button class="post-button discard" style="padding: 10px;">discard</button></a>
+                <input type="submit" value="Publish" class="post-button publish">
+            </div>
+        </div>
+    </div>
+</form>
+
+
+
+<!-- create2 -->
+<%- include(`./partials/footer.ejs`)%>
