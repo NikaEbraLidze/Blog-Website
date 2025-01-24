@@ -125,6 +125,10 @@ a {
         width: 170px;
         height: 45px;
     }
+
+    body{
+        background-position: left;
+    }
 }
 
 /* create1 */
